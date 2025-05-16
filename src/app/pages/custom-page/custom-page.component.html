@@ -1,1 +1,25 @@
-<p>custom-page works!</p>,
+<div class="card card-border bg-base-100 w-96">
+  <div class="card-body">
+    <h2 class="card-title">Slice Pipe</h2>
+    <pre>{{ clients() | slice : 0 : 1 | json }} </pre>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">click</button>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <h2 class="card-title">Json Pipe</h2>
+    <pre>{{ clients() | json }}</pre>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">click</button>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <h2 class="card-title">KeyValue Pipe</h2>
+    <pre>{{ clients() | keyvalue | json }}</pre>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">click</button>
+    </div>
+  </div>
+</div>
